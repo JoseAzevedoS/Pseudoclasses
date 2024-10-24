@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses</title>
+    <link rel="stylesheet" href="pseudoclasses.css">
+</head>
+<body>
+    <!--cabeçalho do site-->
+    <header>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#meio">Meio</a>
+            <a href="#fim">Fim</a>
+        </nav>
+    </header>
+
+    <!--formulário do site-->
+    <!--utilizei a section para dividir cada parte que pede no trabalho e para facilitar a estilização-->
+    <section>
+        <form>
+            <input type="text" name="nome" placeholder="nome">
+            <input type="email" name="email" placeholder="e-mail">
+            <input type="checkbox" name="newslatter">
+            <label>Receber Novidades</label>
+            <button type="submit" disabled>Enviar</button>
+        </form>
+    </section>
+
+    <!--imagens do site-->
+    <ul>
+        <li><img src="imagens/pexels-pixabay-262524.jpg" alt="futebol"></li>
+        <li><img src="imagens/pexels-timmossholder-1080882.jpg" alt="basquete"></li>
+        <li><img src="imagens/pexels-victorfreitas-841130.jpg" alt="academia"></li>
+        <li><img src="imagens/pexels-visitalmaty-848618.jpg" alt="ski"></li>
+    </ul>
+
+    <!--conteúdo do site-->
+    <section id="paragrafos">
+        <p>A primera seção trata-se da navegação do site onde o usuário podera escolher onde ele irá no site</p>
+        <!--o parágrafo a seguir também será afetado pela estilização da pseudoclasse ':not' pois este parágrafo também não possui a classe 'important'-->
+        <p>A segunda seção é o preenchimento de um formulário onde não poderá ser enviado pois o botão está desabilitado</p>
+        <p>A terceira e última seção é uma galaria de quatro fotos destacada sobre alguns esportes</p>
+    </section>
+
+    <!--botão interativo do site-->
+    <a href="https://github.com/JoseAzevedoS/AutoriaWeb">
+        <button class="saibamais">Saiba mais</button>
+    </a>
+
+    <!--texto importante-->
+    <section id="paragrafos2">
+        <p class="important">Parágrafo Importante</p>
+        <p>Parágrafo sem a classe Important</p>
+    </section>
+</body>
+</html>

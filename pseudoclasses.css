@@ -1,0 +1,142 @@
+/*estilos que adicionei para deixar mais bonito*/
+* { /*descobri que para estilizar a parte "global da página utiliza-se * "*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background-color: #021526;
+    line-height: 1.6;
+}
+
+/*CABEÇALHO--------------------------------*/
+/*estilos que adicionei para deixar mais bonito*/
+header{
+    background-color: #03346E;
+    padding: 15px 20px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+ }
+/*pseudoclasses*/
+a:hover {
+    font-weight: bold;
+    color: #6EACDA;
+}
+
+/*FORMS--------------------------------*/
+/*estilos que adicionei para deixar mais bonito*/
+section{
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+label {
+    display: block;
+    margin: 10px 0;
+}
+/*pseudoclasses*/
+input[type="text"]:focus {
+    border: 2px solid #6EACDA;
+    outline: none;
+}
+input[type="email"]:focus {
+    border: 2px solid #6EACDA;
+    outline: none;
+}
+input[type="checkbox"]:checked + label {
+    color: #6EACDA;
+}
+button:disabled {
+    background-color: #31363F;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+/*IMAGENS--------------------------------*/
+/*estilos que adicionei para deixar mais bonito*/
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+li {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+/*pseudoclasses*/
+li:nth-child(odd) {
+   border: 2px solid blue;
+}
+
+/*CONTEÚDO--------------------------------*/
+/*estilos que adicionei para deixar mais bonito*/
+#paragrafos p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+/*pseudoclasses*/
+#paragrafos p:first-child {
+    font-weight: bold;
+    color: #021526;
+}
+#paragrafos p:last-child {
+    color: #E2E2B6;
+}
+/*BOTÃO--------------------------------*/
+/*estilos que adicionei para deixar mais bonito*/
+.saibamais {
+    width: 100%;
+    padding: 10px;
+    background-color: #5C2FC2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+}
+/*pseudoclasses*/
+.saibamais:active {
+    transform: scale(0.95);
+}
+
+/*PARÁGRAFO IMPOSTANTE--------------------------------*/
+/*pseudoclasses*/
+p:not(.important) {
+    color: #4B70F5;
+}
